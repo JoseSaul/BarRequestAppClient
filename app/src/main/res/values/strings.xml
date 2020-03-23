@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">kotlin</string>
+    <string name="press">Press</string>
+    <string name="MensajeEnviar">Mensaje:</string>
+</resources>
