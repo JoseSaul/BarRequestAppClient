@@ -2,13 +2,13 @@ package com.example.kotlin
 
 import Connection.ConnectionServer
 import Connection.Package
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Debug
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,14 +20,25 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         this.button = findViewById<Button>(R.id.button)
-        this.editText = findViewById(R.id.inputedText)
+        //this.editText = findViewById(R.id.inputedText)
     }
 
-     fun Resul(v: View) {
+    //ActionBar
+    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+        R.id.action_settings -> {
+            true
+        }
+
+        else -> {
+            super.onOptionsItemSelected(item)
+        }
+    }
+
+     fun Buy(v: View) {
         Toast.makeText(this,"Enviado",Toast.LENGTH_LONG).show()
          val cs = ConnectionServer()
 
-         var packag = Package(editText?.text.toString())
+         val packag = Package(editText?.text.toString())
          cs.execute(packag)
 
     }

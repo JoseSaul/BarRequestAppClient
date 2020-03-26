@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">BarRequest</string>
-    <string name="press">Press</string>
+    <string name="press">BUY</string>
     <string name="MensajeEnviar">Mensaje:</string>
+    <string name="menu">Menu</string>
+    <string name="food">Food</string>
+    <string name="drink">Drink</string>
 </resources>

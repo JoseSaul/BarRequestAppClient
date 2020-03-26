@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ProductButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#F8C654</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
 </resources>
