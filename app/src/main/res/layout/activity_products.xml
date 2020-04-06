@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    android:background="@color/colorPrimary"
+    tools:context=".activity_products"
+    android:id="@+id/LayoutFood">
+
+    <ImageView android:id="@+id/ImageFood"
+        android:layout_width="120dp"
+        android:layout_height="match_parent">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout android:id="@+id/NameFoodLayout"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <TextView android:id="@+id/FoodName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Bocadillo de calamares" />
+
+            <TextView android:id="@+id/FoodPrice"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="200,35 €" />
+
+        </RelativeLayout>
+
+        <TextView android:id="@+id/FoodDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="Hola me llamo pepe y estoy aqui haciendo un texto de pruebas, no sirve para nada en realidadpero queda muy bien.">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
-        android:background="#F8B054"
+        android:background="@color/colorButtons"
         tools:ignore="MissingConstraints">
 
         <Button android:id="@+id/buttonMenu"
@@ -33,7 +33,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="#F8B054"
+        android:background="@color/colorButtons"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -43,12 +43,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
-            android:background="#F8C654"
+            android:background="@color/colorButtons"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:onClick="Buy"
-            android:text="@string/press">
-        </Button>
+            android:text="@string/press"/>
 
     </RelativeLayout>
 
