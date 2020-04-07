@@ -16,12 +16,19 @@ class MainActivity : AppCompatActivity() {
     private var editText: EditText? = null
     private var button: Button? = null
 
+    private var linearProducts: LinearLayout? = null
+    private var layoutFood: LinearLayout? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         this.button = findViewById<Button>(R.id.button)
+        linearProducts = findViewById<LinearLayout>(R.id.LinearProducts)
+        layoutFood = findViewById<LinearLayout>(R.id.LayoutFood)
         //this.editText = findViewById(R.id.inputedText)
+
+        //LoadMenu()
     }
 
     //ActionBar
@@ -42,6 +49,10 @@ class MainActivity : AppCompatActivity() {
          val packag = Package(editText?.text.toString())
          cs.execute(packag)
 
+    }
+
+    fun LoadMenu(){
+        linearProducts?.addView(layoutFood)
     }
 
 

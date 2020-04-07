@@ -29,8 +29,8 @@
     </LinearLayout>
 
 
-
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/colorButtons"
@@ -44,11 +44,26 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:background="@color/colorButtons"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
             android:onClick="Buy"
-            android:text="@string/press"/>
+            android:text="@string/press"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
 
     </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="589dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout android:id="@+id/LinearProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
